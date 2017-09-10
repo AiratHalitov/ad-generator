@@ -6,8 +6,9 @@
  * Author:      Airat Halitov
  * Author URI:  https://airat.biz
  * Version:     1.0.0
+ * Text Domain: ad-generator
+ * Domain Path: languages
  */
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
-
