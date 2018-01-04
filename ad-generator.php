@@ -46,7 +46,7 @@ class ad_generator_shortcode {
 			echo '<p>Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Из них случайные 10:</p>';
 			
 			for ($i=0; $i<10; ++$i) {
-				echo htmlspecialchars($tRand->getText()) . '<hr />';
+				echo '<p>'.htmlspecialchars($tRand->getText()).'</p><hr />';
 			}
 		}
 		

@@ -22,7 +22,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 = Configuration =
 
-1. Visit 'BuddyBoss > User Blog' and select your desired options.
+1. Create new WordPress Page, add [ad_generator] shortcode and save
+2. Go to page and use ad generator
 
 == Changelog ==
 
