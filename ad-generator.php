@@ -34,23 +34,32 @@ class ad_generator_shortcode {
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
 		if ($ad_text) {
-			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="1024" placeholder="Введите шаблон">' . htmlspecialchars($ad_text) . '</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="10000" placeholder="Введите шаблон">' . htmlspecialchars($ad_text) . '</textarea>';
 		} else {
-			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="1024" placeholder="Введите шаблон">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="10000" placeholder="Введите шаблон">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
 		} 
 		
 		$result_text .=  '<br /><button class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
-		$result_text .=  '<a href='.$_SERVER['REQUEST_URI'].'>Очистить и начать заново</a>';
+		if ($ad_text) $result_text .=  '<a href='.$_SERVER['REQUEST_URI'].'>Очистить и начать заново</a>';
 		
 		if ($ad_text && self::$add_script) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
 			
 			$tRand = new Natty_TextRandomizer($ad_text);
-			$result_text .=  '<p class="alert alert-info">Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Вот случайные <strong>' . self::$max_res. '</strong> из них (возможны повторения):</p>';
+			$num_var = $tRand->numVariant();
 			
-			for ($i = 0; $i < self::$max_res; ++$i) {
+			if ($num_var > 1) {
+				$result_text .=  '<p class="alert alert-info">Число всех возможных вариантов: <strong>' . $num_var . '</strong>. Вот случайные <strong>' . self::$max_res. '</strong> из них (возможны повторения):</p>';
+				
+				for ($i = 0; $i < self::$max_res; ++$i) {
+					$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
+				}
+			} else {
+				$result_text .=  '<p class="alert alert-info">Только <strong>1</strong> возможный вариант:</p>';
 				$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
+				
 			}
+			
 		}
 		
 		$result_text .= '<br /> <p>Страница проекта на GitHub: <a href="https://github.com/AiratHalitov/ad-generator" target=_blank>https://github.com/AiratHalitov/ad-generator</a>';
