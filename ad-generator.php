@@ -17,7 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 class ad_generator_shortcode {
 	
-	static $add_script;
+	static $add_script = false;
+	static $max_res = 10;
 	
 	static function init () {
 		add_shortcode('ad_generator', array(__CLASS__, 'ad_generator_func'));
@@ -33,25 +34,26 @@ class ad_generator_shortcode {
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
 		if ($ad_text) {
-			$result_text .=  '<textarea name="ad_text" cols="100" rows="14">' . htmlspecialchars($ad_text) . '</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="1024" placeholder="Введите шаблон">' . htmlspecialchars($ad_text) . '</textarea>';
 		} else {
-			$result_text .=  '<textarea name="ad_text" cols="100" rows="14">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="1024" placeholder="Введите шаблон">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
 		} 
 		
-		$result_text .=  '<br /><input type="submit" value="Генерировать" /></form>';
+		$result_text .=  '<br /><button class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
 		
-		if ($ad_text) {
+		if ($ad_text && self::$add_script) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
 			
 			$tRand = new Natty_TextRandomizer($ad_text);
-			$result_text .=  '<p>Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Из них случайные 10:</p>';
+			$result_text .=  '<p class="alert alert-info">Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Вот случайные <strong>' . self::$max_res. '</strong> из них (возможны повторения):</p>';
 			
-			for ($i=0; $i<10; ++$i) {
+			for ($i = 0; $i < self::$max_res; ++$i) {
 				$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 			}
 		}
 		
 		$result_text .= '<br /> <p>Страница проекта на GitHub: <a href="https://github.com/AiratHalitov/ad-generator" target=_blank>https://github.com/AiratHalitov/ad-generator</a>';
+		
 		return $result_text;
 	}
 	
