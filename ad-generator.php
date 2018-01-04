@@ -7,7 +7,6 @@
  * Author URI:  https://airat.biz
  * Version:     1.0.0
  * Text Domain: ad-generator
- * Domain Path: languages
  */
 
 // Exit if accessed directly
@@ -23,18 +22,11 @@ class ad_generator_shortcode {
 	static function init () {
 		add_shortcode('ad_generator', array(__CLASS__, 'ad_generator_func'));
 		//add_action('init', array(__CLASS__, 'register_script'));
-		add_action('wp_footer', array(__CLASS__, 'print_script'));
+		//add_action('wp_footer', array(__CLASS__, 'print_script'));
 	}
 	
 	static function ad_generator_func( $atts ) {
 		self::$add_script = true; 
-		return "foo and bar";
-	}
-	
-	//static function register_script() {	}
-	
-	static function print_script () {
-		if ( !self::$add_script ) return;
 		
 		echo '<form method="post" action="">';
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
@@ -45,7 +37,7 @@ class ad_generator_shortcode {
 			echo '<textarea name="ad_text" cols="100" rows="14">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
 		} 
 		
-		echo '<br /><input type="submit" value="Генерировать" /></form>'
+		echo '<br /><input type="submit" value="Генерировать" /></form>';
 		
 		if ($ad_text) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
@@ -57,9 +49,11 @@ class ad_generator_shortcode {
 				echo htmlspecialchars($tRand->getText()) . '<hr />';
 			}
 		}
+		
+		return;
 	}
+	
 }
-
 
 ad_generator_shortcode::init();
 
