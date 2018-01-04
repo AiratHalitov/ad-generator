@@ -27,7 +27,48 @@
             });
         });
 
-        
+		
+        function preg_match_all(regex, haystack) {
+			'use strict';
+			var globalRegex = new RegExp(regex, 'g'),
+				nonGlobalRegex = new RegExp(regex),
+				nonGlobalMatch,
+				globalMatch = haystack.match(globalRegex),
+				matchArray,
+				i;
+		 
+			matchArray = [];
+		 
+			for (i = 0; i < globalMatch.length; i += 1) {
+				nonGlobalMatch = globalMatch[i].match(nonGlobalRegex);
+				matchArray.push(nonGlobalMatch[1]);
+			}
+		 
+			return matchArray;
+		}
+		
+		/*function parse_express(mystring)
+		{
+			$m =array();
+			preg_match_all("/{[a-zA-Zа-яА-ЯЁё0-9\-\+!<>^`~_☎✆☏►>=\?,\/.*;\\\@#\$%\(\)\"\':\|\s]+}/u",mystring,$m);
+			if (empty($m[0][0]))
+			{
+				return mystring;
+			}
+			$result = mystring;
+			foreach ($m[0] as $id =>$val)
+			{
+				$result = str_replace($val, parse_elem($val),$result);
+			}
+			return parse_express($result);
+		}
+		function parse_elem($string)
+		{
+			$string = preg_replace("/[{}]/","",$string);
+			$arr = explode("|",$string);
+			$res= ($arr[rand(0,count($arr) -1)]);
+			return $res;
+		}*/
 
     </script>
 
