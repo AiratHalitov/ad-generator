@@ -1,8 +1,8 @@
 === Ad Generator ===
 Contributors: Airat Halitov
 Requires at least: 3.8
-Tested up to: 4.8.1
-Stable tag: 1.0.1
+Tested up to: 4.9.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,8 +24,14 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 1. Create new WordPress Page, add [ad_generator] shortcode and save
 2. Go to page and use ad generator
+3. Enjoy
 
 == Changelog ==
+
+= 1.0.2 =
+* Решил проблему с переносом строк
+* Добавил файлы для GitHub
+* Настроил правильный вывод результатов
 
 = 1.0.1 =
 * Объединил всё в одну функцию. Убрал лишнее и поправил ошибки

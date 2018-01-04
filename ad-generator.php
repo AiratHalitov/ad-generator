@@ -5,7 +5,7 @@
  * Description: Ad Generator / Text Randomizer
  * Author:      Airat Halitov
  * Author URI:  https://airat.biz
- * Version:     1.0.0
+ * Version:     1.0.2
  * Text Domain: ad-generator
  */
 
@@ -47,7 +47,7 @@ class ad_generator_shortcode {
 			$result_text .=  '<p>Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Из них случайные 10:</p>';
 			
 			for ($i=0; $i<10; ++$i) {
-				$result_text .=  '<p>'.htmlspecialchars($tRand->getText()).'</p><hr />';
+				$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 			}
 		}
 		
