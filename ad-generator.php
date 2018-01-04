@@ -40,6 +40,7 @@ class ad_generator_shortcode {
 		} 
 		
 		$result_text .=  '<br /><button class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
+		$result_text .=  '<a href='.$_SERVER['REQUEST_URI'].'>Очистить и начать заново</a>';
 		
 		if ($ad_text && self::$add_script) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
