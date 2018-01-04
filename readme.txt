@@ -2,7 +2,7 @@
 Contributors: Airat Halitov
 Requires at least: 3.8
 Tested up to: 4.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,13 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 1. Visit 'BuddyBoss > User Blog' and select your desired options.
 
 == Changelog ==
+
+= 1.0.1 =
+* Объединил всё в одну функцию. Убрал лишнее и поправил ошибки
+* Проверил на тестовом сайте - всё работает
+Дальше:
+* Нужно навести красоту
+* Сделать так, чтобы генерировалось с переносами строк
 
 = 1.0.0 =
 * Initial Release
