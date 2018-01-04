@@ -49,9 +49,10 @@ class ad_generator_shortcode {
 			$num_var = $tRand->numVariant();
 			
 			if ($num_var > 1) {
-				$result_text .=  '<p class="alert alert-info">Число всех возможных вариантов: <strong>' . $num_var . '</strong>. Вот случайные <strong>' . self::$max_res. '</strong> из них (возможны повторения):</p>';
+				$max_tmp = min($num_var, self::$max_res);
+				$result_text .=  '<p class="alert alert-info">Число всех возможных вариантов: <strong>' . $num_var . '</strong>. Вот случайные <strong>' . $max_tmp. '</strong> из них (возможны повторения):</p>';
 				
-				for ($i = 0; $i < self::$max_res; ++$i) {
+				for ($i = 0; $i < $max_tmp; ++$i) {
 					$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 				}
 			} else {
