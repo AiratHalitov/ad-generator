@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.1
-* Stable tag: 1.0.2
+* Stable tag: 1.1.0
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,6 +26,14 @@
 2. Go to page and use ad generator
 
 ## Changelog ##
+
+### 1.1.0 ###
+* Решена проблема с множественными пробелами
+* Добавлена ссылка на проект GitHub
+* Добавлена кнопка очистки результатов
+* Настроено визульное оформление результатов
+* Обработка частных случаев разного количества результатов
+* Очистка вывода от обилия слешей
 
 ### 1.0.2 ###
 * Решил проблему с переносом строк

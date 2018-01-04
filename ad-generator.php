@@ -5,7 +5,7 @@
  * Description: Ad Generator / Text Randomizer
  * Author:      Airat Halitov
  * Author URI:  https://airat.biz
- * Version:     1.0.2
+ * Version:     1.1.0
  * Text Domain: ad-generator
  */
 
