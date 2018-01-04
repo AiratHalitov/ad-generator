@@ -27,30 +27,31 @@ class ad_generator_shortcode {
 	
 	static function ad_generator_func( $atts ) {
 		self::$add_script = true; 
+		$result_text = '';
 		
-		echo '<form method="post" action="">';
+		$result_text .= '<form method="post" action="">';
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
 		if ($ad_text) {
-			echo '<textarea name="ad_text" cols="100" rows="14">' . htmlspecialchars($ad_text) . '</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="14">' . htmlspecialchars($ad_text) . '</textarea>';
 		} else {
-			echo '<textarea name="ad_text" cols="100" rows="14">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
+			$result_text .=  '<textarea name="ad_text" cols="100" rows="14">{Рандомизатор|Рандомайзер} {|текста}</textarea>';
 		} 
 		
-		echo '<br /><input type="submit" value="Генерировать" /></form>';
+		$result_text .=  '<br /><input type="submit" value="Генерировать" /></form>';
 		
 		if ($ad_text) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
 			
 			$tRand = new Natty_TextRandomizer($ad_text);
-			echo '<p>Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Из них случайные 10:</p>';
+			$result_text .=  '<p>Число всех возможных вариантов: <strong>' . $tRand->numVariant(). '</strong>. Из них случайные 10:</p>';
 			
 			for ($i=0; $i<10; ++$i) {
-				echo '<p>'.htmlspecialchars($tRand->getText()).'</p><hr />';
+				$result_text .=  '<p>'.htmlspecialchars($tRand->getText()).'</p><hr />';
 			}
 		}
 		
-		return;
+		return $result_text;
 	}
 	
 }
