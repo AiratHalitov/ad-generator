@@ -51,6 +51,7 @@ class ad_generator_shortcode {
 			}
 		}
 		
+		$result_text .= '<br /> <p>Страница проекта на GitHub: <a href="https://github.com/AiratHalitov/ad-generator" target=_blank>https://github.com/AiratHalitov/ad-generator</a>';
 		return $result_text;
 	}
 	
