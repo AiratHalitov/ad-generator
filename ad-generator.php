@@ -52,8 +52,8 @@ class ad_generator_shortcode {
 			
 			if ($num_var > 1) {
 				$max_tmp = min($num_var, self::$max_res);
-				$result_text .=  '<p><i>Число всех возможных вариантов: <strong>' . $num_var \
-					.'</strong>. Вот случайные <strong>' . $max_tmp. '</strong> из них (возможны повторения):</i></p>';
+				$result_text .=  '<p><i>Число всех возможных вариантов: <strong>' . $num_var . '</strong>. ';
+				$result_text .=  'Вот случайные <strong>' . $max_tmp. '</strong> из них (возможны повторения):</i></p>';
 				
 				for ($i = 0; $i < $max_tmp; ++$i) {
 					$result_text .=  '<p id="ad_text_result">'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
