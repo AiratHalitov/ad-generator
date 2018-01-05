@@ -33,7 +33,7 @@ class ad_generator_shortcode {
 		$result_text .= '<form method="post" action="">';
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
-		$result_text .=  '<textarea name="ad_text" cols="100" rows="10" autofocus maxlength="10000" placeholder="Введите шаблон">';
+		$result_text .=  '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="65525" style="width: 100%;" placeholder="Введите шаблон">';
 		
 		if ($ad_text) {
 			$result_text .=  htmlspecialchars($ad_text) . '</textarea>';
@@ -41,8 +41,8 @@ class ad_generator_shortcode {
 			$result_text .=  '{Рандомизатор|Рандомайзер} {|текста}</textarea>';
 		} 
 		
-		$result_text .=  '<br /><button class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
-		if ($ad_text) $result_text .=  '<br /><a href='.$_SERVER['REQUEST_URI'].'>Очистить и начать заново</a>';
+		$result_text .=  '<br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
+		if ($ad_text) $result_text .=  '<br /><a href='.$_SERVER['REQUEST_URI'].' id="ad_text_clear_btn">Очистить и начать заново</a>';
 		
 		if ($ad_text && self::$add_script) {
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
@@ -56,11 +56,11 @@ class ad_generator_shortcode {
 					.'</strong>. Вот случайные <strong>' . $max_tmp. '</strong> из них (возможны повторения):</i></p>';
 				
 				for ($i = 0; $i < $max_tmp; ++$i) {
-					$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
+					$result_text .=  '<p id="ad_text_result">'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 				}
 			} else {
 				$result_text .=  '<p><i>Только <strong>1</strong> возможный вариант:</i></p>';
-				$result_text .=  '<p>'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
+				$result_text .=  '<p id="ad_text_result">'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 				
 			}
 			
