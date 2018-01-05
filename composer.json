@@ -1,0 +1,55 @@
+{
+	"name"       : "airathalitov/ad-generator",
+	"description": "Professional text randomizer and ad generator",
+	"homepage"   : "https://github.com/AiratHalitov/ad-generator",
+	"type"       : "wordpress-plugin",
+	"keywords": [
+		"randomizer",
+		"generator",
+		"wordpress",
+		"avito",
+		"ad generator",
+		"text randomizer"
+	],
+	"license"    : "GPL-3.0+",
+	"authors"    : [
+		{
+			"name"    : "Airat Halitov",
+			"email"    : "airat.halitov@gmail.com",
+			"homepage": "https://airat.biz"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/AiratHalitov/ad-generator/issues",
+		"source": "https://github.com/AiratHalitov/ad-generator",
+		"wiki": "https://github.com/AiratHalitov/ad-generator/wiki"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "airathalitov/ad-generator",
+				"version": "1.1.0",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/AiratHalitov/ad-generator/archive/master.zip"
+				},
+				"require" : {
+					"composer/installers": "v1.0.6"
+				}
+			}
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"johnpbloch/wordpress": ">=3.8.0@stable"
+	},
+    "extra": {
+		"wordpress-install-dir": "vendor/wordpress"
+    }
+}
