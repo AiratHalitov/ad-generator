@@ -33,7 +33,7 @@
 			"type": "package",
 			"package": {
 				"name": "airathalitov/ad-generator",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"type": "wordpress-plugin",
 				"dist": {
 					"type": "zip",

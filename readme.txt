@@ -2,7 +2,7 @@
 Contributors: Airat Halitov
 Requires at least: 3.8
 Tested up to: 4.9.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,14 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 3. Enjoy
 
 == Changelog ==
+
+= 1.1.1 =
+* Добавлены айдишники ко всем полям и элементам
+* Настроена ширина поля. Оптимизация под мобильники
+* Визуальные настройки отображения элементов
+* Добавил поддержку composer (файл composer.json)
+* Расширил ISSUE_TEMPLATE.md
+* Оптимизация кода
 
 = 1.1.0 =
 * Решена проблема с множественными пробелами
