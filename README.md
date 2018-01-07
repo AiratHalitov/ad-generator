@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.1
-* Stable tag: 1.1.0
+* Stable tag: 1.1.1
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,6 +24,7 @@
 
 1. Create new WordPress Page, add [ad_generator] shortcode and save
 2. Go to page and use ad generator
+3. Enjoy
 
 ## Changelog ##
 
