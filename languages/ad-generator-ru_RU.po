@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: airathalitov/ad-generator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-09 20:41+0500\n"
-"PO-Revision-Date: 2018-01-09 20:41+0500\n"
+"PO-Revision-Date: 2018-01-09 20:44+0500\n"
 "Language-Team: Airat Halitov <airat.halitov@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ad-generator.php:37
 msgid "Введите шаблон"
-msgstr ""
+msgstr "Введите шаблон"
 
 #: ad-generator.php:42
 msgid ""
@@ -30,14 +30,18 @@ msgid ""
 "быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем "
 "нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}"
 msgstr ""
+"Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|"
+"рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|"
+"быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем "
+"нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}"
 
 #: ad-generator.php:45
 msgid "Генерировать"
-msgstr ""
+msgstr "Генерировать"
 
 #: ad-generator.php:48
 msgid "Очистить и начать заново"
-msgstr ""
+msgstr "Очистить и начать заново"
 
 #: ad-generator.php:57
 #, php-format
@@ -45,13 +49,16 @@ msgid ""
 "<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
 "<strong>%s</strong> из них (возможны повторения):</i></p>"
 msgstr ""
+"<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
+"<strong>%s</strong> из них (возможны повторения):</i></p>"
 
 #: ad-generator.php:63
 msgid "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
-msgstr ""
+msgstr "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
 
 #: ad-generator.php:68
 #, php-format
 msgid ""
 "<br /><p>Страница проекта на GitHub: <a href=\"%s\" target=_blank>%s</a>"
 msgstr ""
+"<br /><p>Страница проекта на GitHub: <a href=\"%s\" target=_blank>%s</a>"
