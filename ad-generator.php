@@ -7,6 +7,7 @@
  * Author URI:  https://airat.biz
  * Version:     1.2.0
  * Text Domain: ad-generator
+ * GitHub Plugin URI: airathalitov/ad-generator
  */
 
 // Exit if accessed directly
