@@ -38,7 +38,7 @@ class ad_generator_shortcode {
 		if ($ad_text) {
 			$result_text .=  htmlspecialchars($ad_text) . '</textarea>';
 		} else {
-			$result_text .=  '{Рандомизатор|Рандомайзер} {|текста}</textarea>';
+			$result_text .=  'Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}</textarea>';
 		} 
 		
 		$result_text .=  '<br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
