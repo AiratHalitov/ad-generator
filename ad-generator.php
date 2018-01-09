@@ -12,9 +12,6 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// https://habrahabr.ru/company/dataart/blog/265245/
-// [ad_generator]
-
 class ad_generator_shortcode {
 	
 	static $add_script = false;
@@ -33,18 +30,19 @@ class ad_generator_shortcode {
 		$result_text .= '<form method="post" action="">';
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
-		$result_text .=  '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="4000" style="width: 100%;" placeholder="Введите шаблон">';
+		$result_text .=  '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="4000" style="width: 100%;" placeholder="'.__('Введите шаблон', 'ad-generator').'">';
 		
 		if ($ad_text) {
-			$result_text .=  htmlspecialchars($ad_text) . '</textarea>';
+			$result_text .=  htmlspecialchars($ad_text);
 		} else {
-			$result_text .=  'Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}</textarea>';
-		} 
+			$result_text .=  __('Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}', 'ad-generator');
+		}
 		
-		$result_text .=  '<br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">Генерировать</button></form>';
-		if ($ad_text) $result_text .=  '<br /><a href='.$_SERVER['REQUEST_URI'].' id="ad_text_clear_btn">Очистить и начать заново</a>';
+		$result_text .=  '</textarea><br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">'.__('Генерировать', 'ad-generator').'</button></form>';
 		
 		if ($ad_text && self::$add_script) {
+			$result_text .=  '<br /><a href='.$_SERVER['REQUEST_URI'].' id="ad_text_clear_btn">'.__('Очистить и начать заново', 'ad-generator').'</a>';
+			
 			require_once plugin_dir_path( __FILE__ ).'/includes/Natty/TextRandomizer.php';
 			
 			$tRand = new Natty_TextRandomizer($ad_text);
@@ -52,25 +50,21 @@ class ad_generator_shortcode {
 			
 			if ($num_var > 1) {
 				$max_tmp = min($num_var, self::$max_res);
-				$result_text .=  '<p><i>Число всех возможных вариантов: <strong>' . $num_var . '</strong>. ';
-				$result_text .=  'Вот случайные <strong>' . $max_tmp. '</strong> из них (возможны повторения):</i></p>';
+				$result_text .= sprintf(__('<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные <strong>%s</strong> из них (возможны повторения):</i></p>', 'ad-generator'), $num_var, $max_tmp);
 				
 				for ($i = 0; $i < $max_tmp; ++$i) {
 					$result_text .=  '<p id="ad_text_result">'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
 				}
 			} else {
-				$result_text .=  '<p><i>Только <strong>1</strong> возможный вариант:</i></p>';
+				$result_text .=  __('<p><i>Только <strong>1</strong> возможный вариант:</i></p>', 'ad-generator');
 				$result_text .=  '<p id="ad_text_result">'.nl2br(htmlspecialchars($tRand->getText())).'</p><hr />';
-				
 			}
-			
 		}
-		
-		$result_text .= '<br /><p>Страница проекта на GitHub: <a href="https://github.com/AiratHalitov/ad-generator" target=_blank>https://github.com/AiratHalitov/ad-generator</a>';
+		$myGH = 'https://github.com/AiratHalitov/ad-generator';
+		$result_text .= sprintf(__('<br /><p>Страница проекта на GitHub: <a href="%s" target=_blank>%s</a>', 'ad-generator'), $myGH, $myGH);
 		
 		return $result_text;
 	}
-	
 }
 
 ad_generator_shortcode::init();
