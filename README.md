@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.1
-* Stable tag: 1.1.1
+* Stable tag: 1.2.0
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,12 @@
 3. Enjoy
 
 ## Changelog ##
+
+### 1.2.0 ###
+* Добавил поддержку языковых файлов
+* Добавил русские и английские переводы
+* Обновил "рыбу" для рандомизации
+* Уменьшил макс. число символов в форме до 4000
 
 ### 1.1.1 ###
 * Добавлены айдишники ко всем полям и элементам
