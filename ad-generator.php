@@ -5,7 +5,7 @@
  * Description: Ad Generator / Text Randomizer
  * Author:      Airat Halitov
  * Author URI:  https://airat.biz
- * Version:     1.2.1
+ * Version:     1.2.2
  * Text Domain: ad-generator
  * Domain Path: /languages/
  * GitHub Plugin URI: airathalitov/ad-generator
@@ -16,7 +16,7 @@
  * @author    Airat Halitov
  * @license   GPLv3
  * @link      https://github.com/AiratHalitov/ad-generator
- * @version   1.2.1
+ * @version   1.2.2
  */
 
 // Exit if accessed directly
@@ -29,12 +29,12 @@ class ad_generator_shortcode {
 	static $mydomain = 'ad-generator';
 	
 	static function init () {
-		load_plugin_textdomain( self::$mydomain, false, basename( dirname( __FILE__ ) ) . '/languages/' );
-
 		add_shortcode('ad_generator', array(__CLASS__, 'ad_generator_func'));
-		
-		//add_action('init', array(__CLASS__, 'register_script'));
-		//add_action('wp_footer', array(__CLASS__, 'print_script'));
+		add_action('plugins_loaded', array(__CLASS__, 'ad_generator_textdomain'));
+	}
+	
+	static function ad_generator_textdomain () {
+		load_plugin_textdomain( self::$mydomain, false, basename( dirname( __FILE__ ) ) . '/languages/' );
 	}
 	
 	static function ad_generator_func( $atts ) {
