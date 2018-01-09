@@ -33,7 +33,7 @@ class ad_generator_shortcode {
 		$result_text .= '<form method="post" action="">';
 		$ad_text = isset($_POST['ad_text']) ? (string) $_POST['ad_text'] : '';
 		
-		$result_text .=  '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="65525" style="width: 100%;" placeholder="Введите шаблон">';
+		$result_text .=  '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="4000" style="width: 100%;" placeholder="Введите шаблон">';
 		
 		if ($ad_text) {
 			$result_text .=  htmlspecialchars($ad_text) . '</textarea>';
