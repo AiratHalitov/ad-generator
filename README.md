@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.1
-* Stable tag: 1.2.0
+* Stable tag: 1.2.1
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,13 @@
 3. Enjoy
 
 ## Changelog ##
+
+### 1.2.1 ###
+* Добавил автоматические обновления через GitHub Updater
+* Поправил changelog.md
+* Прописал метаданные пакета
+* Поправил /languages/
+* Поправил шаблон генератора
 
 ### 1.2.0 ###
 * Добавил поддержку языковых файлов
