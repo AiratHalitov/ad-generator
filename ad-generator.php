@@ -7,8 +7,16 @@
  * Author URI:  https://airat.biz
  * Version:     1.2.0
  * Text Domain: ad-generator
- * Domain Path: languages
+ * Domain Path: /languages/
  * GitHub Plugin URI: airathalitov/ad-generator
+ */
+/**
+ * @package   airathalitov/ad-generator
+ * @category  Core
+ * @author    Airat Halitov
+ * @license   GPLv3
+ * @link      https://github.com/AiratHalitov/ad-generator
+ * @version   1.2.0
  */
 
 // Exit if accessed directly
@@ -21,7 +29,7 @@ class ad_generator_shortcode {
 	static $mydomain = 'ad-generator';
 	
 	static function init () {
-		load_plugin_textdomain( self::$mydomain, false, basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( self::$mydomain, false, basename( dirname( __FILE__ ) ) . '/languages/' );
 
 		add_shortcode('ad_generator', array(__CLASS__, 'ad_generator_func'));
 		
