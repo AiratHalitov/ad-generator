@@ -7,6 +7,7 @@
  * Author URI:  https://airat.biz
  * Version:     1.2.0
  * Text Domain: ad-generator
+ * Domain Path: languages
  * GitHub Plugin URI: airathalitov/ad-generator
  */
 
