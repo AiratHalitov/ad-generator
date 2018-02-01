@@ -44,7 +44,8 @@ class ad_generator_shortcode {
 		$ad_text = isset( $_POST['ad_text'] ) ? (string) $_POST['ad_text'] : '';
 		$ad_text = str_replace( '\\\\', '\\', $ad_text );
 		$ad_text = str_replace( '\\"', '"', $ad_text );
-
+		$ad_text = str_replace( "\\'", "'", $ad_text );
+		
 		$result_text .= '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="4000" style="width: 100%;" placeholder="' . __( 'Введите шаблон', self::$mydomain ) . '">';
 		
 		if ( $ad_text ) {
