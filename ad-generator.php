@@ -2,10 +2,10 @@
 /**
  * Plugin Name:		Ad Generator
  * Plugin URI:		https://github.com/AiratHalitov/ad-generator
- * Description:		Ad Generator / Text Randomizer
+ * Description:		Professional text randomizer and ad generator.
  * Author:		Airat Halitov
  * Author URI:		https://airat.biz
- * Version:		1.2.2
+ * Version:		1.2.3
  * Text Domain:		ad-generator
  * Domain Path:		/languages/
  * GitHub Plugin URI:	airathalitov/ad-generator
@@ -16,7 +16,7 @@
  * @author		Airat Halitov
  * @license		GPLv3
  * @link		https://github.com/AiratHalitov/ad-generator
- * @version		1.2.2
+ * @version		1.2.3
  */
 
 // Exit if accessed directly

@@ -1,16 +1,16 @@
 === Ad Generator ===
 Contributors: Airat Halitov
 Requires at least: 3.8
-Tested up to: 4.9.1
-Stable tag: 1.2.2
+Tested up to: 4.9.2
+Stable tag: 1.2.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Генератор объявлений для различных досок объявлений
+Professional text randomizer and ad generator.
 
 == Description ==
 
-Генератор объявлений (рандомизатор текста) для досок объявлений, типа авито и т.д.
+Профессиональный рандомизатор текста и генератор объявлений для досок объявлений
 
 == Installation ==
 
@@ -27,6 +27,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 3. Enjoy
 
 == Changelog ==
+
+= 1.2.3 =
+* %rand% возвращает случайное число от 0 до 9
+* Исправлена ошибка с лишними символами \
+* Форматирование и оптимизация кода
 
 = 1.2.2 =
 * Теперь работает поддержка разных языков (пока русский и английский)

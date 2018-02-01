@@ -1,18 +1,18 @@
-# Ad Generator #
+# Ad Generator
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
-* Tested up to: 4.9.1
-* Stable tag: 1.2.2
+* Tested up to: 4.9.2
+* Stable tag: 1.2.3
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Генератор объявлений для различных досок объявлений
+Professional text randomizer and ad generator.
 
-## Description ##
+## Description
 
-Генератор объявлений (рандомизатор текста) для досок объявлений, типа авито и т.д.
+Профессиональный рандомизатор текста и генератор объявлений для досок объявлений
 
-## Installation ##
+## Installation
 
 1. Visit 'Plugins > Add New'
 2. Click 'Upload Plugin'
@@ -20,31 +20,36 @@
 4. Activate Ad Generator from your Plugins page.
 5. Add [ad_generator] shortcode to WordPress Page.
 
-# Configuration #
+# Configuration
 
 1. Create new WordPress Page, add [ad_generator] shortcode and save
 2. Go to page and use ad generator
 3. Enjoy
 
-## Changelog ##
+## Changelog
 
-### 1.2.2 ###
+### 1.2.3
+* %rand% возвращает случайное число от 0 до 9
+* Исправлена ошибка с лишними символами \
+* Форматирование и оптимизация кода
+
+### 1.2.2
 * Теперь работает поддержка разных языков (пока русский и английский)
 
-### 1.2.1 ###
+### 1.2.1
 * Добавил автоматические обновления через GitHub Updater
 * Поправил changelog.md
 * Прописал метаданные пакета
 * Поправил /languages/
 * Поправил шаблон генератора
 
-### 1.2.0 ###
+### 1.2.0
 * Добавил поддержку языковых файлов
 * Добавил русские и английские переводы
 * Обновил "рыбу" для рандомизации
 * Уменьшил макс. число символов в форме до 4000
 
-### 1.1.1 ###
+### 1.1.1
 * Добавлены айдишники ко всем полям и элементам
 * Настроена ширина поля. Оптимизация под мобильники
 * Визуальные настройки отображения элементов
@@ -52,7 +57,7 @@
 * Расширил ISSUE_TEMPLATE.md
 * Оптимизация кода
 
-### 1.1.0 ###
+### 1.1.0
 * Решена проблема с множественными пробелами
 * Добавлена ссылка на проект GitHub
 * Добавлена кнопка очистки результатов
@@ -60,24 +65,24 @@
 * Обработка частных случаев разного количества результатов
 * Очистка вывода от обилия слешей
 
-### 1.0.2 ###
+### 1.0.2
 * Решил проблему с переносом строк
 * Добавил файлы для GitHub
 * Настроил правильный вывод результатов
 
-### 1.0.1 ###
+### 1.0.1
 * Объединил всё в одну функцию. Убрал лишнее и поправил ошибки
 * Проверил на тестовом сайте - всё работает
 Дальше:
 * Нужно навести красоту
 * Сделать так, чтобы генерировалось с переносами строк
 
-### 1.0.0 ###
+### 1.0.0
 * Initial Release
 
 ***
 
-# Documentation #
+# Documentation
 
 ## Что такое рандомизатор текста?
 
@@ -94,7 +99,8 @@
 1. Если можно перемешать последовательность "текст 1 текст 2 текст 3", то вместо нее вставляем инструкцию [текст 1|текст 2|текст 3]. 
 1. Если можно перемешать последовательность "текст 1, текст 2, текст 3", то вместо нее вставляем инструкцию [+,+текст 1|текст 2|текст 3]. 
 1. Если можно перемешать абзацы "абзац1 абзац2 абзац3", то можно просто писать абзац1|абзац2|абзац3. 
-1. Если нужно вставить в текст какой-то спецсимвол "{", "}", "|", "[", "]", "+" или "\", то его следует экранировать: "\{", "\}", "\|", "\[", "\]", "\+" или "\\".
+1. Если нужно вставить в текст какой-то спецсимвол {, }, |, [, ], + или \, то его следует экранировать: \{, \}, \|, \[, \], \+ или \\.
+1. Если нужно вставить случайное число - шаблон **%rand%** возвращает случайное число от 0 до 9
 
 **Инструкции могут иметь неограниченную вложенность.**
 
@@ -133,23 +139,24 @@
 * {текст 1|текст 2|текст 3} - перебор
 * [текст 1|текст 2|текст 3] - перестановки
 * [+разделитель+текст 1|текст 2|текст 3] - перестановки с разделителем
-* \{ \} \| \[ \] \+ \\ - экранизация спецсимволов
+* { } | [ ] + \ - экранизация спецсимволов в виде \{, \}, \|, \[, \], \+ или \\
+* **%rand%** возвращает случайное число от 0 до 9
 * Поддерживается вложенность дирректив
 
 ***
 
-# Contributing #
+# Contributing
 Firstly, thanks for even thinking about contributing. You're awesome!
 
 To make things easier we've created these guidelines:
 
-## Issues: ##
+## Issues:
 
 * When opening an issue please keep it to one bug / enhancement / question etc. this to simplify the discussion.
 * Please test the master branch to confirm the issue still exists.
 * Be as descriptive as you can. Screen shots are always welcome.
 
-## Pull Requests ##
+## Pull Requests
 
 * The general rule is to use 1 PR for 1 Issue. This helps the merge master quickly figure out how the new code affects the plugin.
 * All Pull Request must be made from int "master". You will be responsible for checking that your branch is up to date.
