@@ -80,8 +80,6 @@ class Natty_TextRandomizer_Node
         //$result = trim($result);
         //$result = preg_replace('/\s+/u', ' ', $result);
         $result = preg_replace('| +|', ' ', $result);
-        //$result = str_replace('\\\\', '\\', $result);
-        $result = str_replace('\\', '', $result);
         $result = str_replace(' ,', ',', $result);
         $result = str_replace(' .', '.', $result);
         $result = str_replace(' !', '!', $result);
