@@ -26,7 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class ad_generator_shortcode {
 	
-	static $add_script = false;
 	static $max_res = 10;
 	static $mydomain = 'ad-generator';
 	
@@ -40,9 +39,7 @@ class ad_generator_shortcode {
 	}
 	
 	static function ad_generator_func( $atts ) {
-		self::$add_script = true; 
 		$result_text = '';
-		
 		$result_text .= '<form method="post" action="">';
 		$ad_text = isset( $_POST['ad_text'] ) ? (string) $_POST['ad_text'] : '';
 		
@@ -56,7 +53,7 @@ class ad_generator_shortcode {
 		
 		$result_text .= '</textarea><br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">' . __( 'Генерировать', self::$mydomain ) . '</button></form>';
 		
-		if ( $ad_text && self::$add_script ) {
+		if ( $ad_text ) {
 			$result_text .= '<br /><a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a>';
 			
 			require_once plugin_dir_path( __FILE__ ) . '/includes/Natty/TextRandomizer.php';
