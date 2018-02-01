@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.2
-* Stable tag: 1.2.3
+* Stable tag: [1.2.3](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,7 +20,7 @@ Professional text randomizer and ad generator.
 4. Activate Ad Generator from your Plugins page.
 5. Add [ad_generator] shortcode to WordPress Page.
 
-# Configuration
+## Configuration
 
 1. Create new WordPress Page, add [ad_generator] shortcode and save
 2. Go to page and use ad generator
