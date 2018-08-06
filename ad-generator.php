@@ -5,7 +5,7 @@
  * Description:		Professional text randomizer and ad generator.
  * Author:		Airat Halitov
  * Author URI:		https://airat.biz
- * Version:		1.2.3
+ * Version:		1.3.0
  * Text Domain:		ad-generator
  * Domain Path:		/languages/
  * GitHub Plugin URI:	airathalitov/ad-generator
@@ -16,7 +16,7 @@
  * @author		Airat Halitov
  * @license		GPLv3
  * @link		https://github.com/AiratHalitov/ad-generator
- * @version		1.2.3
+ * @version		1.3.0
  */
 
 // Exit if accessed directly
@@ -53,8 +53,19 @@ class ad_generator_shortcode {
 		} else {
 			$result_text .= __( 'Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем нравится} {!|.|. : )} {Спасибо!|Спасибо большое!|Спасибо, Айрат!}', self::$mydomain );
 		}
+
+		$result_text .= '</textarea><br /><p>';
+
+		$result_text .= __('Выбор количества отображаемых результатов (по умолчанию 10):', self::$mydomain );
+		$result_text .= '<br /><input type="radio" name="ad_count" value="10" checked>10<br />';
+		$result_text .= '<input type="radio" name="ad_count" value="100">100<br />';
+		$result_text .= '<input type="radio" name="ad_count" value="300">300<br /></p>';
 		
-		$result_text .= '</textarea><br /><button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">' . __( 'Генерировать', self::$mydomain ) . '</button></form>';
+		self::$max_res = isset( $_POST['ad_count'] ) ? (int) $_POST['ad_count'] : 10;
+		if ( self::$max_res <= 0 ) self::$max_rest = 1;
+		if ( self::$max_res > 300 ) self::$max_res = 300;
+
+		$result_text .= '<button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">' . __( 'Генерировать', self::$mydomain ) . '</button></form>';
 		
 		if ( $ad_text ) {
 			$result_text .= '<br /><a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a>';

@@ -1,8 +1,8 @@
 # Ad Generator
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
-* Tested up to: 4.9.2
-* Stable tag: [1.2.3](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
+* Tested up to: 4.9.8
+* Stable tag: [1.3.0](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,9 @@ Professional text randomizer and ad generator.
 3. Enjoy
 
 ## Changelog
+
+### 1.3.0
+* Добавлена возможность выбора количество отображаемых результатов
 
 ### 1.2.3
 * %rand% возвращает случайное число от 0 до 9
