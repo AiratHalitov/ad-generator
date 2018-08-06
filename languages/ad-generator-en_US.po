@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Airat Halitov <airat.halitov@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: ad-generator v1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-06 20:35+0500\n"
-"PO-Revision-Date: 2018-08-06 20:39+0500\n"
+"POT-Creation-Date: 2018-08-06 23:49+0500\n"
+"PO-Revision-Date: 2018-08-06 23:53+0500\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +37,7 @@ msgstr "Select the number of results displayed (default 10):"
 msgid "Генерировать"
 msgstr "Generate"
 
-#: ad-generator.php:71
+#: ad-generator.php:71 ad-generator.php:86
 msgid "Очистить и начать заново"
 msgstr "Clear and restart"
 
@@ -45,17 +45,18 @@ msgstr "Clear and restart"
 #, php-format
 msgid ""
 "<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
-"<strong>%s</strong> из них ( возможны повторения ):</i></p>"
+"<strong>%s</strong> из них:</i></p>"
 msgstr ""
 "<p><i>The number of all possible variants: <strong>%s</strong>. Here are the "
-"random <strong>%s</strong> variants (repetitions possible):</i></p>"
+"random <strong>%s</strong> variants:</i></p>"
 
-#: ad-generator.php:86
+#: ad-generator.php:88
 msgid "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
 msgstr "<p><i>Only <strong>1</strong> possible variant:</i></p>"
 
-#: ad-generator.php:91
+#: ad-generator.php:93
 #, php-format
 msgid ""
-"<br /><p>Страница проекта на GitHub: <a href=\"%s\" target=_blank>%s</a>"
-msgstr "<br /><p>Project page on GitHub: <a href=\"%s\" target=_blank>%s</a>"
+"<br /><a href=\"%s\" target=_blank>Исходный код рандомизатора на GitHub</a>"
+msgstr ""
+"<br /><a href=\"%s\" target=_blank>Source code of randomizer on GitHub</a>"

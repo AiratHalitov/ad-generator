@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Airat Halitov <airat.halitov@gmail.com>, 2018.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ad-generator v1.3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-06 20:35+0500\n"
+"POT-Creation-Date: 2018-08-06 23:49+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Генерировать"
 msgstr ""
 
-#: ad-generator.php:71
+#: ad-generator.php:71 ad-generator.php:86
 msgid "Очистить и начать заново"
 msgstr ""
 
@@ -45,15 +45,15 @@ msgstr ""
 #, php-format
 msgid ""
 "<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
-"<strong>%s</strong> из них ( возможны повторения ):</i></p>"
+"<strong>%s</strong> из них:</i></p>"
 msgstr ""
 
-#: ad-generator.php:86
+#: ad-generator.php:88
 msgid "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
 msgstr ""
 
-#: ad-generator.php:91
+#: ad-generator.php:93
 #, php-format
 msgid ""
-"<br /><p>Страница проекта на GitHub: <a href=\"%s\" target=_blank>%s</a>"
+"<br /><a href=\"%s\" target=_blank>Исходный код рандомизатора на GitHub</a>"
 msgstr ""

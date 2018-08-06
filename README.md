@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.8
-* Stable tag: [1.3.0](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
+* Stable tag: [1.3.1](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,10 @@ Professional text randomizer and ad generator.
 3. Enjoy
 
 ## Changelog
+
+### 1.3.1
+* Форматирование вывода результатов
+* Обновлены файлы переводов
 
 ### 1.3.0
 * Добавлена возможность выбора количество отображаемых результатов

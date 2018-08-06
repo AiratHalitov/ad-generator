@@ -5,7 +5,7 @@
  * Description:		Professional text randomizer and ad generator.
  * Author:		Airat Halitov
  * Author URI:		https://airat.biz
- * Version:		1.3.0
+ * Version:		1.3.1
  * Text Domain:		ad-generator
  * Domain Path:		/languages/
  * GitHub Plugin URI:	airathalitov/ad-generator
@@ -16,7 +16,7 @@
  * @author		Airat Halitov
  * @license		GPLv3
  * @link		https://github.com/AiratHalitov/ad-generator
- * @version		1.3.0
+ * @version		1.3.1
  */
 
 // Exit if accessed directly
