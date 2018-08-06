@@ -56,7 +56,7 @@ class ad_generator_shortcode {
 
 		$result_text .= '</textarea><br /><p>';
 
-		$result_text .= __('Выбор количества отображаемых результатов (по умолчанию 10):', self::$mydomain );
+		$result_text .= __( 'Выбор количества отображаемых результатов (по умолчанию 10):', self::$mydomain );
 		$result_text .= '<br /><input type="radio" name="ad_count" value="10" checked>10<br />';
 		$result_text .= '<input type="radio" name="ad_count" value="100">100<br />';
 		$result_text .= '<input type="radio" name="ad_count" value="300">300<br /></p>';
@@ -68,7 +68,7 @@ class ad_generator_shortcode {
 		$result_text .= '<button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">' . __( 'Генерировать', self::$mydomain ) . '</button></form>';
 		
 		if ( $ad_text ) {
-			$result_text .= '<br /><a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a>';
+			$result_text .= '<br /><a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a><br /><br />';
 			
 			require_once plugin_dir_path( __FILE__ ) . '/includes/Natty/TextRandomizer.php';
 			
@@ -77,18 +77,20 @@ class ad_generator_shortcode {
 			
 			if ( $num_var > 1 ) {
 				$max_tmp = min( $num_var, self::$max_res );
-				$result_text .= sprintf( __( '<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные <strong>%s</strong> из них ( возможны повторения ):</i></p>', self::$mydomain ), $num_var, $max_tmp );
+				$result_text .= sprintf( __( '<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные <strong>%s</strong> из них:</i></p>', self::$mydomain ), $num_var, $max_tmp );
 				
 				for ( $i = 0; $i < $max_tmp; ++$i ) {
 					$result_text .= '<p id="ad_text_result">' . nl2br( htmlspecialchars( $tRand->getText() ) ) . '</p><hr />';
 				}
+				if ( $max_tmp >= 10 )
+					$result_text .= '<a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a><br />';
 			} else {
 				$result_text .= __( '<p><i>Только <strong>1</strong> возможный вариант:</i></p>', self::$mydomain );
 				$result_text .= '<p id="ad_text_result">' . nl2br( htmlspecialchars( $tRand->getText() ) ) . '</p><hr />';
 			}
 		}
-		$myGH = 'https://github.com/AiratHalitov/ad-generator';
-		$result_text .= sprintf( __( '<br /><p>Страница проекта на GitHub: <a href="%s" target=_blank>%s</a>', self::$mydomain ), $myGH, $myGH );
+		$myGH = 'https://github.com/AiratHalitov/Ad-Generator';
+		$result_text .= sprintf( __( '<br /><a href="%s" target=_blank>Исходный код рандомизатора на GitHub</a>', self::$mydomain ), $myGH );
 		
 		return $result_text;
 	}
