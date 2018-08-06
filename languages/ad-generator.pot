@@ -1,54 +1,58 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Airat Halitov <airat.halitov@gmail.com>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: airathalitov/ad-generator\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-09 19:52+0500\n"
+"POT-Creation-Date: 2018-08-06 20:35+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Airat Halitov <airat.halitov@gmail.com>\n"
-"Language-Team: Airat Halitov <airat.halitov@gmail.com>\n"
-"Language: ru\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ad-generator.php:37
+#: ad-generator.php:49
 msgid "Введите шаблон"
 msgstr ""
 
-#: ad-generator.php:42
+#: ad-generator.php:54
 msgid ""
 "Это {|, пожалуй,} самый {лучший|прекрасный|отличный} {рандомизатор|"
 "рандомайзер} текста, который я только {видел|встречал}. Он такой [+,+удобный|"
 "быстрый] и функциональный {, что ничего другого уже не нужно|- мне всё в нем "
-"нравится} {!|.|. :)} {Спасибо!|Спасибо большое!|Спасибо автору!}"
+"нравится} {!|.|. : )} {Спасибо!|Спасибо большое!|Спасибо, Айрат!}"
 msgstr ""
 
-#: ad-generator.php:45
-msgid "Генерировать"
-msgstr ""
-
-#: ad-generator.php:48
-msgid "Очистить и начать заново"
-msgstr ""
-
-#: ad-generator.php:57
-#, php-format
-msgid ""
-"<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
-"<strong>%s</strong> из них (возможны повторения):</i></p>"
-msgstr ""
-
-#: ad-generator.php:63
-msgid "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
+#: ad-generator.php:59
+msgid "Выбор количества отображаемых результатов (по умолчанию 10):"
 msgstr ""
 
 #: ad-generator.php:68
+msgid "Генерировать"
+msgstr ""
+
+#: ad-generator.php:71
+msgid "Очистить и начать заново"
+msgstr ""
+
+#: ad-generator.php:80
+#, php-format
+msgid ""
+"<p><i>Число всех возможных вариантов: <strong>%s</strong>. Вот случайные "
+"<strong>%s</strong> из них ( возможны повторения ):</i></p>"
+msgstr ""
+
+#: ad-generator.php:86
+msgid "<p><i>Только <strong>1</strong> возможный вариант:</i></p>"
+msgstr ""
+
+#: ad-generator.php:91
 #, php-format
 msgid ""
 "<br /><p>Страница проекта на GitHub: <a href=\"%s\" target=_blank>%s</a>"
