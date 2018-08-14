@@ -26,7 +26,8 @@ Professional text randomizer and ad generator.
 2. Go to page and use ad generator
 3. Enjoy
 
-## Changelog
+## [Changelog](https://github.com/AiratHalitov/Ad-Generator/blob/master/CHANGELOG.md)
+
 
 ### 1.3.1
 * Форматирование вывода результатов
@@ -89,7 +90,7 @@ Professional text randomizer and ad generator.
 
 ***
 
-# Documentation
+# [Documentation](https://github.com/AiratHalitov/Ad-Generator/wiki)
 
 ## Что такое рандомизатор текста?
 
@@ -153,7 +154,7 @@ Professional text randomizer and ad generator.
 
 ***
 
-# Contributing
+# [Contributing](https://github.com/AiratHalitov/Ad-Generator/blob/master/CONTRIBUTING.md)
 Firstly, thanks for even thinking about contributing. You're awesome!
 
 To make things easier we've created these guidelines:
