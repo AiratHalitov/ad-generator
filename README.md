@@ -28,7 +28,14 @@
 3. Enjoy
 
 ## Screenshots
-![ad-generator](https://user-images.githubusercontent.com/4050715/44120760-d26f5f34-a036-11e8-839a-da43067ff6a1.png)
+### In Russian:
+![ad-generator rus](https://user-images.githubusercontent.com/4050715/44120760-d26f5f34-a036-11e8-839a-da43067ff6a1.png)
+
+### In English:
+![ad-generator eng](https://user-images.githubusercontent.com/4050715/44120977-97561f54-a037-11e8-9600-054306c0b98b.png)
+
+### Gif Animation of Process:
+![ad-generator animation](https://user-images.githubusercontent.com/4050715/44121069-eda8e5a8-a037-11e8-854d-3d6ac1cb5780.gif)
 
 
 ***
