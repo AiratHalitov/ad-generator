@@ -27,6 +27,10 @@
 2. Go to page and use ad generator
 3. Enjoy
 
+## Screenshots
+![ad-generator](https://user-images.githubusercontent.com/4050715/44120760-d26f5f34-a036-11e8-839a-da43067ff6a1.png)
+
+
 ***
 
 # [Документация](https://github.com/AiratHalitov/ad-generator/wiki)
