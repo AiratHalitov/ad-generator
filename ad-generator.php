@@ -89,7 +89,7 @@ class ad_generator_shortcode {
 				$result_text .= '<p id="ad_text_result">' . nl2br( htmlspecialchars( $tRand->getText() ) ) . '</p><hr />';
 			}
 		}
-		$myGH = 'https://github.com/AiratHalitov/Ad-Generator';
+		$myGH = 'https://github.com/AiratHalitov/ad-generator';
 		$result_text .= sprintf( __( '<br /><a href="%s" target=_blank>Исходный код рандомизатора на GitHub</a>', self::$mydomain ), $myGH );
 		
 		return $result_text;
