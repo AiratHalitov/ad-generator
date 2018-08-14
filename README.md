@@ -1,4 +1,4 @@
-# Ad Generator
+# [Ad Generator](https://airat.biz/random/)
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.8
