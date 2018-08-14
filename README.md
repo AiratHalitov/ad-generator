@@ -2,7 +2,7 @@
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
 * Tested up to: 4.9.8
-* Stable tag: [1.3.1](https://github.com/AiratHalitov/Ad-Generator/releases/latest)
+* Stable tag: [1.3.1](https://github.com/AiratHalitov/ad-generator/releases/latest)
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -29,7 +29,7 @@
 
 ***
 
-# [Документация](https://github.com/AiratHalitov/Ad-Generator/wiki)
+# [Документация](https://github.com/AiratHalitov/ad-generator/wiki)
 
 ## Что такое рандомизатор текста?
 
@@ -91,7 +91,7 @@
 * `%rand%` возвращает случайное число от 0 до 9
 * Поддерживается вложенность дирректив
 
-## [Примеры шаблонов](https://github.com/AiratHalitov/Ad-Generator/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2)
+## [Примеры шаблонов](https://github.com/AiratHalitov/ad-generator/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2)
 
 ### Пример шаблона объявления для ниши «Ремонт квартир»
 Попробуйте вставить его в [рандомизатор](https://airat.biz/random/) и посмотрите, что получится на выходе. Это объявления можно публиковать на авито. 
@@ -113,7 +113,7 @@
 
 ***
 
-## [Changelog](https://github.com/AiratHalitov/Ad-Generator/blob/master/CHANGELOG.md)
+## [Changelog](https://github.com/AiratHalitov/ad-generator/blob/master/CHANGELOG.md)
 
 
 ### 1.3.1
@@ -177,7 +177,7 @@
 
 ***
 
-# [Contributing](https://github.com/AiratHalitov/Ad-Generator/blob/master/CONTRIBUTING.md)
+# [Contributing](https://github.com/AiratHalitov/ad-generator/blob/master/CONTRIBUTING.md)
 Firstly, thanks for even thinking about contributing. You're awesome!
 
 To make things easier we've created these guidelines:
