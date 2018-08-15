@@ -4,7 +4,7 @@
 * Tested up to: 4.9.8
 * Stable tag: [1.3.1](https://github.com/AiratHalitov/ad-generator/releases/latest)
 * License: GPLv3
-* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* License URI: https://github.com/AiratHalitov/ad-generator/blob/master/LICENSE
 
 Профессиональный рандомизатор текста и генератор объявлений от Айрата Халитова / Professional text randomizer and ad generator. Author: Airat Halitov
 
