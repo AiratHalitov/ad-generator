@@ -2,7 +2,7 @@
 Contributors: Airat Halitov
 Requires at least: 3.8
 Tested up to: 4.9.8
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv3
 License URI: https://github.com/AiratHalitov/ad-generator/blob/master/LICENSE
 
@@ -27,6 +27,14 @@ Professional text randomizer and ad generator.
 3. Enjoy
 
 == Changelog ==
+
+= 1.3.2 =
+* Добавлены айдишники к выбору количества результатов
+* Обновлен URL лицензии
+* Добавлены скриншоты в README.md
+* Обновлены файлы для репозитория GitHub (DOCUMENTATION, ISSUE_TEMPLATE, README)
+* Изменен регистр названия репозитория Ad-Generator -> ad-generator
+* Обновлены файлы переводов
 
 = 1.3.1 =
 * Форматирование вывода результатов
