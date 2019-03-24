@@ -46,7 +46,7 @@ class ad_generator_shortcode {
 		$ad_text = str_replace( '\\"', '"', $ad_text );
 		$ad_text = str_replace( "\\'", "'", $ad_text );
 		
-		$result_text .= '<textarea id="ad_text" name="ad_text" cols="80" rows="10" autofocus maxlength="10000" style="width: 100%;" placeholder="' . __( 'Введите шаблон', self::$mydomain ) . '">';
+		$result_text .= '<textarea id="ad_text" name="ad_text" cols="80" rows="10" maxlength="10000" style="width: 100%;" placeholder="' . __( 'Введите шаблон', self::$mydomain ) . '">';
 		
 		if ( $ad_text ) {
 			$result_text .= htmlspecialchars( $ad_text );
