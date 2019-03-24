@@ -1,8 +1,8 @@
 # [Ad Generator](https://airat.biz/random/)
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
-* Tested up to: 4.9.8
-* Stable tag: [1.3.2](https://github.com/AiratHalitov/ad-generator/releases/latest)
+* Tested up to: 5.2.0
+* Stable tag: [1.4.0](https://github.com/AiratHalitov/ad-generator/releases/latest)
 * License: GPLv3
 * License URI: https://github.com/AiratHalitov/ad-generator/blob/master/LICENSE
 
@@ -125,6 +125,10 @@
 ***
 
 ## [Changelog](https://github.com/AiratHalitov/ad-generator/blob/master/CHANGELOG.md)
+
+### 1.4.0
+* Увеличено число допустимых символов с 4000 до 10000
+* Исправлен автофокус на странице с формой
 
 ### 1.3.2
 * Добавлены айдишники к выбору количества результатов
