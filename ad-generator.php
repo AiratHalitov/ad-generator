@@ -34,6 +34,7 @@ class ad_generator_shortcode {
 		add_action( 'plugins_loaded', array( __CLASS__, 'ad_generator_textdomain' ) );
 	}
 	
+	
 	static function ad_generator_textdomain () {
 		load_plugin_textdomain( self::$mydomain, false, basename( dirname( __FILE__ ) ) . '/languages/' );
 	}
@@ -62,7 +63,7 @@ class ad_generator_shortcode {
 		$result_text .= '<label><input type="radio" name="ad_count" value="300" id="ads_300"> 300</label><br /></p>';
 		
 		self::$max_res = isset( $_POST['ad_count'] ) ? (int) $_POST['ad_count'] : 10;
-		if ( self::$max_res <= 0 ) self::$max_rest = 1;
+		if ( self::$max_res <= 0 ) self::$max_res = 1;
 		if ( self::$max_res > 300 ) self::$max_res = 300;
 
 		$result_text .= '<button id="ad_text_btn" class="btn btn-large btn-primary" type="submit">' . __( 'Генерировать', self::$mydomain ) . '</button></form>';
