@@ -1,4 +1,20 @@
 <?php
+/**
+ * Command line interface for professional text randomizer and ad generator.
+ * 
+ * USAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
+ * -n 300 - number of variants (default: 300)
+ * -f shablon.txt - input template (necessary)
+ * -o result.txt - result file (default: result-$N.txt)
+ */
+/**
+ * @package    airathalitov/ad-generator
+ * @category   Core
+ * @author     Airat Halitov
+ * @license    GPLv3
+ * @link       https://github.com/AiratHalitov/ad-generator
+ * @version    1.4.0
+ */
 
 if ( $argc < 3 ) {
     die( "\nUSAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt\n\n" );
