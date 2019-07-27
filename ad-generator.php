@@ -57,9 +57,9 @@ class ad_generator_shortcode {
 		$result_text .= '</textarea><br /><p>';
 
 		$result_text .= __( 'Выбор количества отображаемых результатов (по умолчанию 10):', self::$mydomain );
-		$result_text .= '<br /><label><input type="radio" name="ad_count" value="10" id="ads_10" checked>10</label><br />';
-		$result_text .= '<label><input type="radio" name="ad_count" value="100" id="ads_100">100</label><br />';
-		$result_text .= '<label><input type="radio" name="ad_count" value="300" id="ads_300">300</label><br /></p>';
+		$result_text .= '<br /><label><input type="radio" name="ad_count" value="10" id="ads_10" checked> 10</label><br />';
+		$result_text .= '<label><input type="radio" name="ad_count" value="100" id="ads_100"> 100</label><br />';
+		$result_text .= '<label><input type="radio" name="ad_count" value="300" id="ads_300"> 300</label><br /></p>';
 		
 		self::$max_res = isset( $_POST['ad_count'] ) ? (int) $_POST['ad_count'] : 10;
 		if ( self::$max_res <= 0 ) self::$max_rest = 1;
