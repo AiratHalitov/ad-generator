@@ -84,6 +84,9 @@ class Natty_TextRandomizer_Node
         $result = str_replace(' .', '.', $result);
         $result = str_replace(' !', '!', $result);
         $result = str_replace(' ?', '?', $result);
+        $result = str_replace('( ', '(', $result);
+        $result = str_replace(' )', ')', $result);
+        $result = str_replace(' :', ':', $result);
         $result = str_replace('%rand%', rand(0, 9), $result);
         return $result;
     }
