@@ -3,9 +3,11 @@
  * Command line interface for professional text randomizer and ad generator.
  * 
  * USAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
- * -n 300 - number of variants (default: 300)
- * -f shablon.txt - input template (necessary)
- * -o result.txt - result file (default: result-$N.txt)
+ * 
+ * -n, -N - number of variants inn output file (default: 300)
+ * -f, --file - input file with template (necessary)
+ * -o, --out - result file (default: result-N.txt)
+ * -h, --help - show help message
  */
 /**
  * @package    airathalitov/ad-generator
@@ -16,24 +18,47 @@
  * @version    1.4.0
  */
 
-if ( $argc < 3 ) {
-    die( "\nUSAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt\n\n" );
+if ( $argc < 2 ) {
+    die( show_help () );
+}
+
+function show_help () {
+echo <<<END
+\nHELP:
+Command line interface for professional text randomizer and ad generator.\n
+USAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt\n
+Arguments:
+  -n, -N \tnumber of variants inn output file (default: 300)
+  -f, --file \tinput file with template (necessary)
+  -o, --out \tresult file (default: result-N.txt)
+  -h, --help \tshow help message
+
+Author: Airat Halitov
+Link: https://airat.biz/random/
+GitHub: https://github.com/AiratHalitov/ad-generator\n\n
+END;
 }
 
 function read_file ( $filename ) {
-    $fp = fopen( $filename, "r" ) or die( "\nread_file: Unable to open file!\n\n" );
+    $fp = fopen( $filename, "r" ) or die( "\nError in read_file(): Unable to open file!\n\n" );
+    if ( filesize( $filename ) < 2 ) {
+        die( "\nError in read_file(): Input file should not be empty!\n\n" );
+    }
     $content = fread( $fp, filesize( $filename ) );
+    if ( trim( $content ) == '' ) {
+        die( "\nError in read_file(): Input file should not be empty!\n\n" );
+    }
     fclose( $fp );
     return $content;
 }
 
 function save_file ( $filename, $content ) {
-    $fp = fopen( $filename, "w" ) or die( "\nsave_file: Unable to open file!\n\n" );
+    $fp = fopen( $filename, "w" ) or die( "\nError in save_file(): Unable to open file!\n\n" );
     fwrite( $fp, $content );
     fclose( $fp );
 }
 
-$N = -1;
+$N = 300;
 $file_in = '';
 $file_out = '';
 
@@ -48,14 +73,22 @@ for( $i = 1; $i < $argc; $i++ )
     if ( ( !strcmp( $argv[$i], "-o" ) || !strcmp( $argv[$i], "--out" ) ) && ( $i+1<$argc ) ) {
         $file_out = ( string )$argv[$i+1]; 
     }
+    if ( !strcmp( $argv[$i], "-h" ) || !strcmp( $argv[$i], "--help" ) ) {
+        die( show_help () );
+    }
 }
 
 if ( $N < 1 ) {
-    echo "\nWrong n! Using default n = 300\n\n";
+    echo "\nWarning! N should be > 0! Using default n = 300\n";
+    $N = 300;
+}
+if ( $N > 1e9 ) {
+    echo "\nWarning! N is too big (> 1e9)! Using default n = 300\n";
     $N = 300;
 }
 if ( $file_in == '' ) {
-    die( "\nUSAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt\n\n" );
+    echo "\nError! Мissing input file! (argument after -f or --file)\n";
+    die( show_help () );
 }
 if ( $file_out == '' ) {
     $file_out = 'result-' . $N . '.txt';
