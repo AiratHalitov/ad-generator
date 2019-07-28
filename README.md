@@ -9,11 +9,11 @@
 Профессиональный рандомизатор текста и генератор объявлений от Айрата Халитова / Professional text randomizer and ad generator. Author: Airat Halitov
 
 
-## Description
+## Описание
 
 Профессиональный рандомизатор текста и генератор объявлений от Айрата Халитова / Professional text randomizer and ad generator. Author: Airat Halitov
 
-## Installation
+## Установка
 
 1. Visit 'Plugins > Add New'
 2. Click 'Upload Plugin'
@@ -21,13 +21,13 @@
 4. Activate Ad Generator from your Plugins page.
 5. Add [ad_generator] shortcode to WordPress Page.
 
-## Configuration
+## Настройка
 
 1. Create new WordPress Page, add [ad_generator] shortcode and save
 2. Go to page and use ad generator
 3. Enjoy
 
-## Screenshots
+## Скриншоты
 ### In Russian:
 ![ad-generator rus](https://user-images.githubusercontent.com/4050715/44120760-d26f5f34-a036-11e8-839a-da43067ff6a1.png)
 
