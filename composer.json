@@ -9,7 +9,8 @@
 		"wordpress",
 		"avito",
 		"ad generator",
-		"text randomizer"
+		"text randomizer",
+		"cli"
 	],
 	"license"    : "GPL-3.0",
 	"authors"    : [
@@ -33,7 +34,7 @@
 			"type": "package",
 			"package": {
 				"name": "airathalitov/ad-generator",
-				"version": "1.4.0",
+				"version": "2.0.0",
 				"type": "wordpress-plugin",
 				"dist": {
 					"type": "zip",

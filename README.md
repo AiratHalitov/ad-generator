@@ -1,10 +1,10 @@
 # [Ad Generator](https://airat.biz/random/)
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
-* Tested up to: 5.2.0
-* Stable tag: [1.4.0](https://github.com/AiratHalitov/ad-generator/releases/latest)
+* Tested up to: 5.2.2
+* Stable tag: [2.0.0](https://github.com/AiratHalitov/ad-generator/releases/latest)
 * License: GPLv3
-* License URI: https://github.com/AiratHalitov/ad-generator/blob/master/LICENSE
+* License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Профессиональный рандомизатор текста и генератор объявлений от Айрата Халитова / Professional text randomizer and ad generator. Author: Airat Halitov
 
@@ -115,7 +115,8 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 
 * `-n` или `-N` - количество вариантов на выходе (по умолчанию 300),
 * `-f` или `--file` - файл с шаблоном (обязательно),
-* `-o` или `--out` - файл с результатом (по умолчанию, `result-N.txt`).
+* `-o` или `--out` - файл с результатом (по умолчанию, `result-N.txt`),
+* `-h` или `--help` - вызов справки.
 
 Запускать эту команду нужно из папки плагина. Параметры разделяются пробелом, как в примере. У вас обязательно должны быть права на чтение и запись файлов в этой папке. На выходе вы получите файл, в котором будут сгенерированные по вашему шаблону случайные N вариантов.
 
@@ -142,6 +143,12 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 ***
 
 ## [Changelog](https://github.com/AiratHalitov/ad-generator/blob/master/CHANGELOG.md)
+
+### 2.0.0
+* Добавлена новая консольная версия
+* Обработка ошибок и справка в консольной версии
+* Добавлены теги label к выбору вариантов
+* Поправлено удаление лишних пробелов в результатах
 
 ### 1.4.0
 * Увеличено число допустимых символов с 4000 до 10000

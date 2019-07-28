@@ -1,10 +1,10 @@
 === Ad Generator ===
 Contributors: Airat Halitov
 Requires at least: 3.8
-Tested up to: 5.2.0
-Stable tag: 1.4.0
+Tested up to: 5.2.2
+Stable tag: 2.0.0
 License: GPLv3
-License URI: https://github.com/AiratHalitov/ad-generator/blob/master/LICENSE
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Professional text randomizer and ad generator.
 
@@ -27,6 +27,12 @@ Professional text randomizer and ad generator.
 3. Enjoy
 
 == Changelog ==
+
+= 2.0.0 =
+* Добавлена новая консольная версия
+* Обработка ошибок и справка в консольной версии
+* Добавлены теги label к выбору вариантов
+* Поправлено удаление лишних пробелов в результатах
 
 = 1.4.0 =
 * Увеличено число допустимых символов с 4000 до 10000
