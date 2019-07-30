@@ -8,6 +8,9 @@
  * Version:            2.0.0
  * Text Domain:        ad-generator
  * Domain Path:        /languages/
+ * Requires WP:        3.8
+ * Requires PHP:       5.4
+ * Release Asset:      true
  * GitHub Plugin URI:  https://github.com/AiratHalitov/ad-generator
  */
 /**
