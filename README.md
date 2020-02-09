@@ -1,8 +1,8 @@
 # [Ad Generator](https://airat.biz/random/)
 * Contributors: [Airat Halitov](https://github.com/AiratHalitov)
 * Requires at least: 3.8
-* Tested up to: 5.2.2
-* Stable tag: [2.0.0](https://github.com/AiratHalitov/ad-generator/releases/latest)
+* Tested up to: 5.3.3
+* Stable tag: [2.0.1](https://github.com/AiratHalitov/ad-generator/releases/latest)
 * License: GPLv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -143,6 +143,9 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 ***
 
 ## [Changelog](https://github.com/AiratHalitov/ad-generator/blob/master/CHANGELOG.md)
+
+### 2.0.1
+* Исправлен баг с появлением лишних пробелов (#12)
 
 ### 2.0.0
 * Добавлена новая консольная версия

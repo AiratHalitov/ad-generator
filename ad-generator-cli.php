@@ -15,7 +15,7 @@
  * @author     Airat Halitov
  * @license    GPLv3
  * @link       https://airat.biz/random/
- * @version    2.0.0
+ * @version    2.0.1
  */
 
 if ( $argc < 2 ) {
@@ -25,7 +25,7 @@ if ( $argc < 2 ) {
 function show_help () {
 echo <<<END
 \nHELP:
-Version: 2.0.0
+Version: 2.0.1
 Command line interface for professional text randomizer and ad generator.\n
 USAGE: php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt\n
 Arguments:
