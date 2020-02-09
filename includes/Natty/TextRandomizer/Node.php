@@ -64,14 +64,14 @@ class Natty_TextRandomizer_Node
                 shuffle($this->_subNodes);
                 foreach ($this->_subNodes as $v) {
                     if ($result) {
-                        $result .= ' ' . $this->_separator;
+                        $result .= '' . $this->_separator;
                     }
-                    $result .= ' ' . $v->getText();
+                    $result .= '' . $v->getText();
                 }
                 break;
             case 'series':
                 foreach ($this->_subNodes as $v) {
-                    $result .= ' ' . $v->getText();
+                    $result .= '' . $v->getText();
                 }
                 break;
             default:
