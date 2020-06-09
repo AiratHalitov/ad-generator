@@ -154,7 +154,7 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 или 
 
 ```
-{ПН|Т|СР|ЧТ|ПТ|СБ|ВС}
+{ПН|ВТ|СР|ЧТ|ПТ|СБ|ВС}
 ```
 
 --- 
@@ -178,7 +178,7 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 
 #### Числа:
 
-0-9:
+**0-9:**
 
 ```
 {1|2|3|4|5|6|7|8|9|0}
@@ -190,7 +190,7 @@ php ad-generator-cli.php -n 300 -f shablon.txt -o result.txt
 %rand%
 ```
 
-10-99 (двузначные):
+**10-99 (двузначные):**
 
 ```
 {1|2|3|4|5|6|7|8|9}{1|2|3|4|5|6|7|8|9|0}
