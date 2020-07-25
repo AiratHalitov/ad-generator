@@ -5,7 +5,7 @@
  * Description:        Professional text randomizer and ad generator.
  * Author:             Airat Halitov
  * Author URI:         https://airat.biz
- * Version:            2.0.1
+ * Version:            2.2.0
  * Text Domain:        ad-generator
  * Domain Path:        /languages/
  * Requires WP:        3.8
@@ -19,7 +19,7 @@
  * @author     Airat Halitov
  * @license    GPLv3
  * @link       https://airat.biz/random/
- * @version    2.0.1
+ * @version    2.2.0
  */
 
 // Exit if accessed directly

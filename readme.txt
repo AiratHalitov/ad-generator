@@ -1,8 +1,8 @@
 === Ad Generator ===
 Contributors: Airat Halitov
 Requires at least: 3.8
-Tested up to: 5.4.1
-Stable tag: 2.0.1
+Tested up to: 5.4.3
+Stable tag: 2.2.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,6 +27,11 @@ Professional text randomizer and ad generator.
 3. Enjoy
 
 == Changelog ==
+
+= 2.2.0 =
+* Исправлен баг с подменой лишних пробелов
+* Рефакторинг кода рандомизатора
+* Добавлено больше примеров шаблонов
 
 = 2.0.1 =
 * Исправлен баг с появлением лишних пробелов (#12)
