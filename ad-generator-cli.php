@@ -105,8 +105,8 @@ function ad_generator_cli( $max_res, $filename ) {
     $ad_text = str_replace( "\\'", "'", $ad_text );
 
     if ( $ad_text ) {
-        require_once 'includes/Natty/TextRandomizer.php';
-        $tRand = new Natty_TextRandomizer( $ad_text );
+        require_once 'includes/Randomizer.php';
+        $tRand = new Randomizer( $ad_text );
         $num_var = $tRand->numVariant();
         
         if ( $num_var > 1 ) {

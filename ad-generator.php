@@ -74,9 +74,9 @@ class ad_generator_shortcode {
 		if ( $ad_text ) {
 			$result_text .= '<br /><a href=' . $_SERVER['REQUEST_URI'] . ' id="ad_text_clear_btn">' . __( 'Очистить и начать заново', self::$mydomain ) . '</a><br /><br />';
 			
-			require_once plugin_dir_path( __FILE__ ) . '/includes/Natty/TextRandomizer.php';
+			require_once plugin_dir_path( __FILE__ ) . '/includes/Randomizer.php';
 			
-			$tRand = new Natty_TextRandomizer( $ad_text );
+			$tRand = new Randomizer( $ad_text );
 			$num_var = $tRand->numVariant();
 			
 			if ( $num_var > 1 ) {
