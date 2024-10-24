@@ -1,7 +1,7 @@
 {
-	"name"       : "airathalitov/ad-generator",
+	"name"       : "airatvibe/ad-generator",
 	"description": "Professional text randomizer and ad generator.",
-	"homepage"   : "https://github.com/AiratHalitov/ad-generator",
+	"homepage"   : "https://github.com/airatvibe/ad-generator",
 	"type"       : "wordpress-plugin",
 	"keywords": [
 		"randomizer",
@@ -16,14 +16,14 @@
 	"authors"    : [
 		{
 			"name"    : "Airat Halitov",
-			"email"   : "support@airat.biz",
-			"homepage": "https://airat.biz"
+			"email"   : "support@airatvibe.com",
+			"homepage": "https://airatvibe.com"
 		}
 	],
 	"support": {
-		"issues": "https://github.com/AiratHalitov/ad-generator/issues",
-		"source": "https://github.com/AiratHalitov/ad-generator",
-		"wiki": "https://github.com/AiratHalitov/ad-generator/wiki"
+		"issues": "https://github.com/airatvibe/ad-generator/issues",
+		"source": "https://github.com/airatvibe/ad-generator",
+		"wiki": "https://github.com/airatvibe/ad-generator/wiki"
 	},
 	"repositories": [
 		{
@@ -33,12 +33,12 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "airathalitov/ad-generator",
+				"name": "airatvibe/ad-generator",
 				"version": "2.2.0",
 				"type": "wordpress-plugin",
 				"dist": {
 					"type": "zip",
-					"url": "https://github.com/AiratHalitov/ad-generator/archive/master.zip"
+					"url": "https://github.com/airatvibe/ad-generator/archive/master.zip"
 				},
 				"require" : {
 					"composer/installers": "v1.0.6"
