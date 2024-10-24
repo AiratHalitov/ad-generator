@@ -1,8 +1,8 @@
-# [Ad Generator](https://airat.biz/random/)
-* Contributors: [Airat Halitov](https://github.com/AiratHalitov)
+# [Ad Generator](https://github.com/airatvibe/ad-generator)
+* Contributors: [Airat Halitov](https://github.com/airatvibe)
 * Requires at least: 3.8
 * Tested up to: 5.6
-* Stable tag: [2.2.0](https://github.com/AiratHalitov/ad-generator/releases/latest)
+* Stable tag: [2.2.0](https://github.com/airatvibe/ad-generator/releases/latest)
 * License: GPLv3
 * License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
