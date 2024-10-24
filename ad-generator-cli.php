@@ -10,11 +10,11 @@
  * -h, --help - show help message
  */
 /**
- * @package    airathalitov/ad-generator
+ * @package    airatvibe/ad-generator
  * @category   Core
  * @author     Airat Halitov
  * @license    GPLv3
- * @link       https://airat.biz/random/
+ * @link       https://github.com/airatvibe/ad-generator
  * @version    2.2.0
  */
 
@@ -35,8 +35,7 @@ Arguments:
   -h, --help \tshow help message
 
 Author: Airat Halitov
-Link: https://airat.biz/random/
-GitHub: https://github.com/AiratHalitov/ad-generator\n\n
+Link: https://github.com/airatvibe/ad-generator\n\n
 END;
 }
 
